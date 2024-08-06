@@ -20,7 +20,7 @@ export default function Oracle() {
   const getGroups = useCallback(async () => {
     setIsLoading(true);
     const response = await fetch(
-      `http://127.0.0.1:5000/api/v1/get-groups/oracle`,
+      `https://courses-list-backend.vercel.app/api/v1/get-groups/oracle`,
       {
         method: "GET",
         headers: {
@@ -97,7 +97,7 @@ export default function Oracle() {
       groupe: students,
       courseType: "oracle",
     };
-    await fetch("http://127.0.0.1:5000/api/v1/upload-group", {
+    await fetch("https://courses-list-backend.vercel.app/api/v1/upload-group", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

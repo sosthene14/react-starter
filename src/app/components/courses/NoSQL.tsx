@@ -19,7 +19,7 @@ export default function NoSQL() {
   const getGroups = useCallback(async () => {
     setIsLoading(true);
     const response = await fetch(
-      `http://127.0.0.1:5000/api/v1/get-groups/nosql`,
+      `https://courses-list-backend.vercel.app/api/v1/get-groups/nosql`,
       {
         method: "GET",
         headers: {
@@ -94,7 +94,7 @@ export default function NoSQL() {
       groupe: students,
       courseType: "nosql",
     };
-    await fetch("http://127.0.0.1:5000/api/v1/upload-group", {
+    await fetch("https://courses-list-backend.vercel.app/api/v1/upload-group", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

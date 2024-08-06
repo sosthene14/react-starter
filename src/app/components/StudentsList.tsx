@@ -181,7 +181,7 @@ const DeleteStudent = ({
       _id: groupId,
       courseType: courseType,
     };
-    await fetch("http://127.0.0.1:5000/api/v1/delete-user", {
+    await fetch("https://courses-list-backend.vercel.app/api/v1/delete-user", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -255,7 +255,7 @@ const AddStudent = ({
       firstName: firstName,
       lastName: lastName,
     };
-    await fetch("http://127.0.0.1:5000/api/v1/add-student-to-group", {
+    await fetch("https://courses-list-backend.vercel.app/api/v1/add-student-to-group", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

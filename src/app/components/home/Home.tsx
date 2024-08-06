@@ -48,7 +48,7 @@ const Home: React.FC = () => {
         <div className={`${activeCourse === "Oracle" ? "block" : "hidden"}`}><Oracle /></div>
       </div>
 
-      <a href="https://sosth.netlify.app">Made by Sosthène Mounsamboté</a>
+      <a href="https://github.com/sosthene14" className=" underline">Made by Sosthène Mounsamboté</a>
     </div>
   );
 };

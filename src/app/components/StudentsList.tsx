@@ -124,7 +124,7 @@ const StudentList: React.FC<StudentListProps> = ({
             {group?.groupe?.map((student, index) => (
               <li
                 key={index}
-                className="flex ml-5 gap-5 justify-between font-semibold items-center mb-2"
+                className="flex  gap-5 justify-between font-semibold items-center mb-2"
               >
                 <div className="flex items-center text-lg gap-2">
                   <PiStudentBold />

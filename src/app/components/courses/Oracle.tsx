@@ -117,7 +117,7 @@ export default function Oracle() {
   return (
     <div className="container flex justify-center flex-col items-center mx-auto p-4">
       <BigLoader isLoading={isLoading} />
-      <h1 className="text-2xl font-bold mb-4">Liste des étudiants Laravel</h1>
+      <h1 className="text-2xl font-bold mb-4">Liste des étudiants Oracle</h1>
 
       <StudentForm onAddStudent={addStudent} />
       {students.length > 0 || loadedStudents.length > 0 ? (

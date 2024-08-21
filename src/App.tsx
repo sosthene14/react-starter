@@ -1,13 +1,6 @@
+import "./App.css";
+import { Home } from "./app/pages/Home";
 
-import './App.css'
-import Home from './app/components/home/Home'
-import { message } from 'antd';
+const App = () => <Home />
 
-
-function App() {
-  const [, contextHolder] = message.useMessage();
-
-  return <>{contextHolder}<Home /></>
-}
-
-export default App
+export default App;

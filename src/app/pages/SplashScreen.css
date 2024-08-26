@@ -1,0 +1,54 @@
+.loading {
+    font-size: 84px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-align: center;
+  }
+  
+  .loading span {
+    display: inline-block;
+    margin: 0 -0.05em;
+  }
+  
+  .loading05 {
+    perspective: 1000px;
+  }
+  
+  .loading05 span {
+    transform-origin: 50% 50% -25px;
+    transform-style: preserve-3d;
+    animation: loading05 1.6s infinite;
+   
+  }
+  
+  /* Ajout des délais d'animation pour chaque span */
+  .loading05 span:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .loading05 span:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  
+  .loading05 span:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  
+  .loading05 span:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  
+  .loading05 span:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+  
+  /* Animation keyframes */
+  @keyframes loading05 {
+    0% {
+      transform: rotateX(-360deg);
+    }
+    70% {
+      transform: rotateX(0);
+    }
+  }
+  

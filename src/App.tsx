@@ -1,13 +1,13 @@
 
 import './App.css'
-import Home from './app/components/home/Home'
-import { message } from 'antd';
-
+import RealTimeMap from './app/components/RealTimeMap';
+import "leaflet/dist/leaflet.css";
 
 function App() {
-  const [, contextHolder] = message.useMessage();
-
-  return <>{contextHolder}<Home /></>
+ 
+  
+  
+  return <><RealTimeMap /></>
 }
 
 export default App

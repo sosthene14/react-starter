@@ -1,13 +1,26 @@
+import { Routes } from "react-router-dom";
+import { Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+import VoteCategory from "./app/components/VoteCategory";
+import { HomePage } from "./app/pages/HomePage";
+import { useFetchCategories } from "./app/hooks/useFetchCategories";
+import { useFetchNomines } from "./app/hooks/useFetchNomines";
 
-import './App.css'
-import RealTimeMap from './app/components/RealTimeMap';
-import "leaflet/dist/leaflet.css";
+const App = () => {
 
-function App() {
- 
-  
-  
-  return <><RealTimeMap /></>
-}
+   useFetchCategories();
+   useFetchNomines();
 
-export default App
+   return (
+      <BrowserRouter>
+         <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/vote/:category" element={<VoteCategory />} />
+         </Routes>
+      </BrowserRouter>
+   )
+
+};
+
+export default App;
